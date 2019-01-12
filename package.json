@@ -1,0 +1,29 @@
+{
+  "name": "wechat-bot",
+  "version": "1.0.0",
+  "description": "WeChat bot",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "start": "nodemon --exec babel-node index.js",
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test yet\" && exit 1"
+  },
+  "keywords": [
+    "WeChat",
+    "Chatbot"
+  ],
+  "author": "Michael Yu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "wechat": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^6.0.0",
+    "nodemon": "^1.18.9"
+  }
+}
